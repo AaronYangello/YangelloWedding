@@ -1036,6 +1036,105 @@ form label {
   background: rgba(0, 0, 0, 0.04);
 }
 
+.party {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .party {
+    width: 100%;
+  }
+}
+
+.member{
+ 
+}
+
+.member h3 {
+  font-family: "Sacramento", Arial, serif;
+  color: #F14E95;
+  font-size: 30px;
+}
+
+.member h4 {
+  font-family: "Sacramento", Arial, serif;
+  color: #F14E95;
+  font-size: 20px;
+}
+
+.party .right {
+    float: right;
+    text-align: right;
+}
+
+.party .left {
+    float: left;
+    text-align: left;
+}
+
+.member .groomsman, .member .bridesmaid {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.member .groomsman img, .member .bridesmaid img {
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.member .best {
+    width: 100%;
+    z-index: 99;
+}
+
+.member .best img {
+    margin: auto;
+}
+.member .bio {
+    text-align: center;
+    padding: 10px;
+}
+.right .bio {
+    padding-right: 0px;
+    text-align: right;
+    float: right;
+}
+.left .bio {
+    float:left;
+    padding-left: 0px;
+    text-align: left;
+}
+@media screen and (max-width: 995px) {
+  .member .groomsman, .memeber .bridesmaid{
+    width: 100%;
+    height: 220px;
+  }
+  .member .groomsman img, .member .bridesmaid img{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .member .groomsman, .member .bridesmaid {
+    width: 100%;
+    height: 140px;
+  }
+  .member .groomsman img, .member .bridesmaid img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+}
+
 .couple-wrap {
   width: 90%;
   margin: 0 auto;
@@ -1054,6 +1153,11 @@ form label {
   right: 0;
   z-index: 99;
   animation: pulse 1s ease infinite;
+}
+
+.heart-big {
+    top: 11em;
+    z-index: 100;
 }
 .heart i {
   font-size: 20px;
@@ -1085,7 +1189,7 @@ form label {
   color: #F14E95;
   font-size: 30px;
 }
-.couple-half .groom, .couple-half .bride {
+.couple-half .groom, .couple-half .bride{
   float: left;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1093,6 +1197,15 @@ form label {
   border-radius: 50%;
   width: 150px;
   height: 150px;
+}
+.couple-half .groom-big, .couple-half .bride-big{
+  float: left;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
 }
 .couple-half .groom img, .couple-half .bride img {
   width: 150px;
@@ -1102,12 +1215,43 @@ form label {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
+.couple-half .groom-big img, .couple-half .bride-big img {
+  width: 400px;
+  height: 400px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+@media screen and (max-width: 995px) {
+  .couple-half .groom-big, .couple-half .bride-big {
+    width: 100%;
+    height: 220px;
+  }
+  .couple-half .groom-big img, .couple-half .bride-big img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  .heart-big {
+    top: 4em;      
+  }
+}
 @media screen and (max-width: 480px) {
   .couple-half .groom, .couple-half .bride {
     width: 100%;
     height: 140px;
   }
   .couple-half .groom img, .couple-half .bride img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  .couple-half .groom-big, .couple-half .bride-big {
+    width: 100%;
+    height: 140px;
+  }
+  .couple-half .groom-big img, .couple-half .bride-big img {
     width: 120px;
     height: 120px;
     margin: 0 auto;
@@ -1128,6 +1272,13 @@ form label {
 .couple-half .desc-bride {
   padding-left: 180px;
   text-align: left;
+}
+.couple-half .desc-groom-big,
+.couple-half .desc-bride-big{
+  padding: 10px;
+  display: block;
+  text-align: center;
+  clear: both;
 }
 @media screen and (max-width: 480px) {
   .couple-half .groom, .couple-half .bride {
