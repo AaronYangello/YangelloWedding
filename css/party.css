@@ -57,7 +57,7 @@
 .party-list .bio h3 span{
   font-size: 20px; 
 }
-.party-list .bio #franky-title {
+.party-list .bio .title {
     margin-bottom: 0px;
     z-index: 99;
 }
