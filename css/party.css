@@ -1,3 +1,39 @@
+.heart-big {
+    top: 11em;
+    z-index: 100;
+}
+.couple-half .groom-big, .couple-half .bride-big{
+  float: left;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+}
+.couple-half .groom-big {
+  float: right;
+  margin-right: 5px;
+}
+.couple-half .bride-big {
+  float: left;
+  margin-left: 5px;
+}
+.couple-half .groom-big img, .couple-half .bride-big img {
+  width: 400px;
+  height: 400px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.couple-half .desc-groom-big,
+.couple-half .desc-bride-big{
+  padding: 10px;
+  display: block;
+  text-align: center;
+  clear: both;
+}
 .party-list {
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
@@ -64,12 +100,29 @@
 .party-list li.one-third {
   width: 32.3%;
 }
+@media screen and (max-width: 995px) {
+  .couple-half .groom-big, .couple-half .bride-big {
+    width: 100%;
+  }
+  .couple-half .groom-big img, .couple-half .bride-big img {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width: 768px) {
+  .couple-half .groom-big img, .couple-half .bride-big img{
+    width: 49%;
+    height: auto;  
+  }
   .party-list li .one-third {
     width: 49%;
   }
 }
 @media screen and (max-width: 480px) {
+  .couple-half .groom-big img, .couple-half .bride-big img {
+    width: 100%;
+    margin: 0 auto;
+  }
   .party-list li.one-third {
     width: 100%;
   }
