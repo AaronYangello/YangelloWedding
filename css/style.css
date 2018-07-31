@@ -245,6 +245,15 @@ option{
   position: relative;
 }
 
+#rsvp-btn{
+  left:34%;
+}
+@media screen and (max-width: 768px) {
+  #rsvp-btn{
+    left:0%;
+  }
+}
+
 .fh5co-video {
   height: 450px;
   overflow: hidden;
@@ -640,7 +649,7 @@ option{
     right: auto;
   }
 }
-#fh5co-gallery-list {
+.fh5co-gallery-list {
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
@@ -655,7 +664,7 @@ option{
   margin: 0;
   width: 100%;
 }
-#fh5co-gallery-list li {
+.fh5co-gallery-list li {
   display: block;
   padding: 0;
   margin: 0 0 10px 1%;
@@ -673,18 +682,18 @@ option{
   border-radius: 7px;
 }
 @media screen and (max-width: 480px) {
-  #fh5co-gallery-list li {
+  .fh5co-gallery-list li {
     margin-left: 0;
   }
 }
-#fh5co-gallery-list li a {
+.fh5co-gallery-list li a {
   min-height: 400px;
   padding: 2em;
   position: relative;
   width: 100%;
   display: block;
 }
-#fh5co-gallery-list li a:before {
+.fh5co-gallery-list li a:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -701,10 +710,10 @@ option{
   border-radius: 7px;
   background: rgba(0, 0, 0, 0.2);
 }
-#fh5co-gallery-list li a:hover:before {
+.fh5co-gallery-list li a:hover:before {
   background: rgba(0, 0, 0, 0.5);
 }
-#fh5co-gallery-list li a .case-studies-summary {
+.fh5co-gallery-list li a .case-studies-summary {
   width: auto;
   bottom: 2em;
   left: 2em;
@@ -713,37 +722,37 @@ option{
   z-index: 100;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-gallery-list li a .case-studies-summary {
+  .fh5co-gallery-list li a .case-studies-summary {
     bottom: 1em;
     left: 1em;
     right: 1em;
   }
 }
-#fh5co-gallery-list li a .case-studies-summary span {
+.fh5co-gallery-list li a .case-studies-summary span {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 13px;
   color: rgba(255, 255, 255, 0.7);
 }
-#fh5co-gallery-list li a .case-studies-summary h2 {
+.fh5co-gallery-list li a .case-studies-summary h2 {
   color: #fff;
   margin-bottom: 0;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-gallery-list li a .case-studies-summary h2 {
+  .fh5co-gallery-list li a .case-studies-summary h2 {
     font-size: 20px;
   }
 }
-#fh5co-gallery-list li.one-third {
+.fh5co-gallery-list li.one-third {
   width: 32.3%;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-gallery-list li.one-third {
+  .fh5co-gallery-list li.one-third {
     width: 49%;
   }
 }
 @media screen and (max-width: 480px) {
-  #fh5co-gallery-list li.one-third {
+  .fh5co-gallery-list li.one-third {
     width: 100%;
   }
 }
@@ -837,6 +846,28 @@ form label {
 .fh5co-cover .display-tc {
   display: table-cell !important;
   vertical-align: middle;
+}
+#home-header{
+   background-image:url(../img/banners/flowers-and-kiss.jpg); 
+}
+#our-story-header{
+    background-image:url(../img/banners/books-banner.png);
+    background-position: right;
+}
+#party-header{
+    background-image:url(../img/banners/party-banner.png);
+    background-position: center;
+}
+@media screen and (max-width: 768px) {
+    #home-header{
+       background-image:url(../img/banners/flowers-and-kiss-small.jpg); 
+    }
+    #our-story-header{
+        background-image:url(../img/banners/books-banner-small.png);
+    }
+    #party-header{
+        background-image:url(../img/banners/party-banner-small.png);
+    }
 }
 #fh5co-header .display-tc h1, 
 #fh5co-header .display-tc h2,

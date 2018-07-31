@@ -4,51 +4,86 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Aaron &amp; Kelsea</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Aaron and Kelsea's Wedding" />
-	<meta name="keywords" content="Aaron, Yangello, Kelsea, Salvatore, Wedding" />
-	<meta name="author" content="Aaron Yangello" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Aaron &amp; Kelsea</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Aaron and Kelsea's Wedding" />
+        <meta name="keywords" content="Aaron, Yangello, Kelsea, Salvatore, Wedding" />
+        <meta name="author" content="Aaron Yangello" />
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+        <!-- Facebook and Twitter integration -->
+        <meta property="og:title" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:site_name" content=""/>
+        <meta property="og:description" content=""/>
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:image" content="" />
+        <meta name="twitter:url" content="" />
+        <meta name="twitter:card" content="" />
 
-	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+        <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="css/icomoon.css">
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="css/bootstrap.css">
 
-	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <!-- Magnific Popup -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+        <!-- Owl Carousel  -->
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Modernizr JS -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("May 16, 2020 13:30:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+                // Get todays date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now an the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="demo"
+                document.getElementById("num-days").innerHTML = days;
+                document.getElementById("num-hours").innerHTML = hours;
+                document.getElementById("num-min").innerHTML = minutes;
+                document.getElementById("num-sec").innerHTML = seconds;
+
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("num-days").innerHTML = "00";
+                    document.getElementById("num-hours").innerHTML = "00";
+                    document.getElementById("num-min").innerHTML = "00";
+                    document.getElementById("num-sec").innerHTML = "00";
+                }
+            }, 1000);
+        </script>
 
 	</head>
 	<body>
@@ -62,31 +97,22 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">Wedding<strong>.</strong></a></div>
+					<div id="fh5co-logo"><a href="home.html">Wedding<strong>.</strong></a></div>
 				</div>
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
 						<li class="active"><a href="index.html">Home</a></li>
 						<li><a href="about.html">Our Story</a></li>
-						<li class="has-dropdown">
-							<a href="party.html">The Wedding Party</a>
-							<ul class="dropdown">
-							    <li><a href="party.html">Bride &amp; Groom</a></li>
-								<li><a href="party.html">Groomsmen</a></li>
-								<li><a href="party.html">Bridesmaids</a></li>
-								<li><a href="party.html">Parents</a></li>
-							</ul>
-						</li>
+						<li><a href="party.html">The Wedding Party</a></li>
 						<li class="has-dropdown"><a href="gallery.html">Gallery</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
 			</div>
-			
 		</div>
 	</nav>
 
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
+	<header id="home-header" class="fh5co-header fh5co-cover" role="banner" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -96,7 +122,34 @@
 							<h1>Aaron &amp; Kelsea</h1>
 							<h2>We Are Getting Married <br> <h4><em>...finally...</em></h4></h2>
 							
-							<div class="simply-countdown simply-countdown-one"></div>
+							<div class="simply-countdown simply-countdown-one">
+							    <div class="simply-countdown simply-countdown-one">
+							        <div class="simply-section simply-days-section">
+							            <div>
+							                <span id="num-days" class="simply-amount"></span>
+							                <span class="simply-word">days</span>
+							             </div>
+							         </div>
+							         <div class="simply-section simply-hours-section">
+							             <div>
+							                 <span id="num-hours" class="simply-amount"></span>
+							                 <span class="simply-word">hours</span>
+							             </div>
+							         </div>
+							         <div class="simply-section simply-minutes-section">
+							             <div>
+							                 <span id="num-min" class="simply-amount"></span>
+							                 <span class="simply-word">minutes</span>
+							             </div>
+							         </div>
+							         <div class="simply-section simply-seconds-section">
+							             <div>
+							                 <span id="num-sec" class="simply-amount"></span>
+							                 <span class="simply-word">seconds</span>
+							             </div>
+							         </div>
+							     </div>
+							</div>
 							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
 						</div>
 					</div>
@@ -117,17 +170,18 @@
 			<div class="couple-wrap animate-box">
 				<div class="couple-half">
 					<div class="groom">
-						<img src="images/groom.jpg" alt="groom" class="img-responsive">
+						<img src="img/aaron.png" alt="Aaron Yangello" class="img-responsive">
 					</div>
 					<div class="desc-groom">
 						<h3>Aaron Yangello</h3>
-						<p>Patience Quote</p>
+						<p>"Our willingness to wait reveals the value we place on what we're waiting for." <br>-Charles Stanley</p>
+						<!-- There are people out there who are waiting to meet you. Waiting to love you. You have to stick around for them. <br> -Benedict Smith -->
 					</div>
 				</div>
 				<p class="heart text-center"><i class="icon-heart2"></i></p>
 				<div class="couple-half">
 					<div class="bride">
-						<img src="images/bride.jpg" alt="groom" class="img-responsive">
+						<img src="img/kelsea.png" alt="Kelsea Salvatore" class="img-responsive">
 					</div>
 					<div class="desc-bride">
 						<h3>Kelsea Salvatore</h3>
@@ -139,7 +193,7 @@
 	</div>
 
 <!-- Wedding Events-->
-	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/img_bg_3.jpg);">
+	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(img/banners/venue.png);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -295,7 +349,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-4 col-sm-4" style="left:34%;">
+                            <div id="rsvp-btn" class="col-md-4 col-sm-4" style="left:34%;">
                                 <button type="submit" class="btn btn-default btn-block">I am Attending</button>
                             </div>
                         </div>
@@ -334,31 +388,6 @@
 	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
-	<script>
-        var d = new Date("2020 05 16 13:30");
-        var localTime = d.getTime();
-        var localOffset = d.getTimezoneOffset() * 60000;
-        var utc = localTime + localOffset;
-
-        d = new Date(utc);
-
-        // default example
-        simplyCountdown('.simply-countdown-one', {
-            year: d.getFullYear(),
-            month: d.getMonth() + 1,
-            day: d.getDate()
-        });
-
-        //jQuery example
-        $('#simply-countdown-losange').simplyCountdown({
-            year: d.getFullYear(),
-            month: d.getMonth() + 1,
-            day: d.getDate(),
-            enableUtc: false
-        });
-    </script>
-
 	</body>
 </html>
 
