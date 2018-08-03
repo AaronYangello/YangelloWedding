@@ -28,15 +28,19 @@
         include('dbConfig.php');
 
         //get images from database
-        $query = $db->query("SELECT * FROM `gallery-photos` ORDER BY datetaken ASC"); ?>
+        $query = $db->query("SELECT * FROM `gallery-photos` WHERE `gallery` = 'through_the_years' ORDER BY datetaken ASC"); ?>
 
        <?php
         if($query->num_rows > 0){
             while($row = $query->fetch_assoc()){
                 $imageURL = "..\\" . $row["imagepath"];
-                $imageThumbURL = substr_replace($imageURL,"_thumb.jpg",strpos($imageURL, ".jpg", 0));
         ?>
-            <img src="<?php echo $imageURL; ?>" />
+            <div>
+                <img src="<?php echo $imageURL; ?>" />
+                <div class="caption-box">
+                    <p class="caption"><?php echo $row["title"]?></p>
+                </div>
+            </div>
         <?php }
         } ?>
     </div>

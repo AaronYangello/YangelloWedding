@@ -18,7 +18,24 @@
   display: table;
   clear: both;
 }
-
+.caption-box {
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom:20px;
+    padding: 0px 20px;
+    margin: auto;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 20px;
+}
+.caption {
+    font-family: "Work Sans", Arial, sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #fff;
+}
 .slides-navigation {
   margin: 0 auto;
   position: absolute;
@@ -59,13 +76,6 @@
     background-position: center;
     background-size: contain;
 }
-.slides-navigation a.prev {
-
-}
-.slides-navigation a.next {
-
-}
-
 .slides-pagination {
   position: absolute;
   z-index: 3;
