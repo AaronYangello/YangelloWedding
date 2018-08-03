@@ -28,17 +28,17 @@
         include('dbConfig.php');
 
         //get images from database
-        $query = $db->query("SELECT * FROM `gallery-photos` WHERE `gallery` = 'through_the_years' ORDER BY datetaken ASC"); ?>
+        $query = pg_query($db,"SELECT * FROM \"yangello-wedding\".\"gallery-photos\" WHERE gallery = 'through_the_years' ORDER BY datetaken;"); ?>
 
        <?php
         if($query->num_rows > 0){
-            while($row = $query->fetch_assoc()){
-                $imageURL = "..\\" . $row["imagepath"];
+            while($row = pg_fetch_row($query)){
+                $imageURL = "..\\" . $row[1];
         ?>
             <div>
                 <img src="<?php echo $imageURL; ?>" />
                 <div class="caption-box">
-                    <p class="caption"><?php echo $row["title"]?></p>
+                    <p class="caption"><?php echo $row[2]?></p>
                 </div>
             </div>
         <?php }
