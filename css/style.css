@@ -862,6 +862,12 @@ form label {
     background-image:url(../img/banners/venue.png);
     background-position:center;
 }
+#gallery-banner {
+    background-image:url(../img/banners/gallery-banner.png);
+}
+#through-the-years-banner {
+    background-image:url(../img/banners/hands-banner.png);
+}
 @media screen and (max-width: 768px) {
     #home-header{
        background-image:url(../img/banners/flowers-and-kiss-small.jpg); 
@@ -874,6 +880,12 @@ form label {
     }
     #event-banner {
         background-image:url(../img/banners/venue-small.png);
+    }
+    #gallery-banner {
+        background-image:url(../img/banners/gallery-banner-small.png);
+    }
+    #through-the-years-banner {
+        background-image:url(../img/banners/hands-banner-small.png);
     }
 }
 #fh5co-header .display-tc h1, 
