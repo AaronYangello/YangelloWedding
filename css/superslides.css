@@ -32,7 +32,11 @@
 .slides-navigation a:hover{
     opacity: 1.0;
 }
-
+@media screen and (max-width:480px) {
+    .slides-navigation a {
+        opacity: 0.5;
+    }
+}
  .slides-navigation .next-btn {
     position:absolute;
     margin:0px;
