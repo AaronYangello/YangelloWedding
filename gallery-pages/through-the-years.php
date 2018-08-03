@@ -28,12 +28,17 @@
         include('dbConfig.php');
 
         //get images from database
-        $query = pg_query($db,"SELECT * FROM \"yangello-wedding\".\"gallery-photos\" WHERE gallery = 'through_the_years' ORDER BY datetaken;"); ?>
+        $sql =<<<EOF
+            SELECT * FROM "yangello-wedding" "gallery-photos" WHERE gallery = 'through_the_years' ORDER BY datetaken;
+        EOF;
 
-       <?php
-        if($query->num_rows > 0){
-            while($row = pg_fetch_row($query)){
-                $imageURL = "..\\" . $row[1];
+       $ret = pg_query($db, $sql);
+       if(!$ret) {
+          echo pg_last_error($db);
+          exit;
+       } 
+       while($row = pg_fetch_row($query)){
+            $imageURL = "..\\" . $row[1];
         ?>
             <div>
                 <img src="<?php echo $imageURL; ?>" />
@@ -41,8 +46,7 @@
                     <p class="caption"><?php echo $row[2]?></p>
                 </div>
             </div>
-        <?php }
-        } ?>
+        <?php }?>
     </div>
 
    <div class="slides-navigation">

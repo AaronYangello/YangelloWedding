@@ -10,8 +10,6 @@
     $db = pg_connect("host=$dbHost port=5432 dbname=$dbName user=$dbUsername password=$dbPassword");
 
     if(!$db) {
-      echo "<h1>Error : Unable to open database\n</h1>";
-   } else {
-      echo "<h1>Opened database successfully\n</h1>";
-   }
+      echo "<h1>Error : Unable to open database\n Sorry!</h1>";
+   } 
 ?>
