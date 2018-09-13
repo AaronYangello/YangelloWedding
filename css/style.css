@@ -870,7 +870,7 @@ form label {
 }
 @media screen and (max-width: 768px) {
     #home-header{
-       background-image:url(../img/banners/flowers-and-kiss-small.jpg); 
+       background-image:url(../img/banners/flowers-and-kiss-small.png); 
     }
     #our-story-header{
         background-image:url(../img/banners/books-banner-small.png);

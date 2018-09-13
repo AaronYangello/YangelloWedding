@@ -28,6 +28,14 @@
     background-color: rgba(0,0,0,0.3);
     border-radius: 20px;
 }
+@media screen and (max-width:480px) {
+    .caption-box {
+        top:20px;
+        bottom:auto;
+        padding:5px;
+        width: 90%;
+    }
+}
 .caption {
     font-family: "Work Sans", Arial, sans-serif;
     text-align: center;
