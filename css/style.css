@@ -855,7 +855,8 @@ form label {
   vertical-align: middle;
 }
 #home-header{
-   background-image:url(../img/banners/flowers-and-kiss.jpg); 
+    background-image:url(../img/banners/home-banner.png); 
+    background-position: right;
 }
 #our-story-header{
     background-image:url(../img/banners/books-banner.png);
@@ -866,8 +867,10 @@ form label {
     background-position: center;
 }
 #event-banner {
-    background-image:url(../img/banners/venue.png);
+    background-image:url(../img/banners/brigalias-chapel.jpg);
+    
     background-position:center;
+    overflow: hidden;
 }
 #gallery-banner {
     background-image:url(../img/banners/gallery-banner.png);

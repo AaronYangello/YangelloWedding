@@ -1,0 +1,1 @@
+find . ( -name *.jpg -or -name *.png -or -name *.gif ) -size +120k -type f -exec ls -lah {} ;

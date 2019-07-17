@@ -122,8 +122,8 @@ var css = {
       that.$el.css({
         position: 'relative',
         overflow: 'hidden',
-        width: '100%',
-        height: that.height
+        width: that.width,
+        height: '100%'
       });
 
       that.$control.css({
