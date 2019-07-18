@@ -49,6 +49,9 @@
         <!--[if lt IE 9]>
         <script src="js/respond.min.js"></script>
         <![endif]-->
+        
+        <!-- AddEvent script -->
+        <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
         <script>
             // Set the date we're counting down to
             var countDownDate = new Date("April 25, 2020 18:00:00").getTime();
@@ -84,6 +87,25 @@
                 }
             }, 1000);
         </script>
+        
+        <!-- Favicon Stuff -->
+        <link rel="apple-touch-icon" sizes="57x57" href="img/icon/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/icon/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/icon/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/icon/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/icon/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/icon/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/icon/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/icon/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/icon/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/icon/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/icon/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon/favicon-16x16.png">
+        <link rel="manifest" href="img/icon/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="img/icon/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
 
 	</head>
 	<body>
@@ -150,7 +172,18 @@
 							         </div>
 							     </div>
 							</div>
-							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
+							<!--<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>-->
+							<!-- Button code -->
+                            <div title="Add to Calendar" class="btn btn-default btn-sm addeventatc" data-styling="none" >
+                                Save the Date!
+                                <span class="start">04/25/2019 06:00 PM</span>
+                                <span class="end">04/25/2019 11:30 PM</span>
+                                <span class="timezone">America/New_York</span>
+                                <span class="title">Aaron and Kelsea's Wedding</span>
+                                <span class="location">Brigalias 396 Williamstown Rd, Sicklerville, NJ 08081</span>
+                                <span class="organizer">Aaron Yangello</span>
+                                <span class="organizer_email">ayangello@gmail.com</span>
+                            </div>
 						</div>
 					</div>
 				</div>
@@ -227,7 +260,7 @@
 									<h3>Wedding Reception</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
-										<span>7:30 PM</span>
+										<span>6:30 PM</span>
 										<span>11:30 AM</span>
 									</div>
 									<div class="event-col">
