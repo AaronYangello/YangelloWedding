@@ -860,12 +860,11 @@ form label {
   vertical-align: middle;
 }
 #home-header{
-    background-image:url(../img/banners/home-banner.png); 
-    background-position: right;
+    background-image:url(../img/banners/home-banner-xLarge.png); 
+    background-position: top left;
 }
 #our-story-header{
     background-image:url(../img/banners/books-banner.png);
-    background-position: right;
 }
 #party-header{
     background-image:url(../img/banners/party-banner.png);
@@ -879,14 +878,25 @@ form label {
 }
 #gallery-banner {
     background-image:url(../img/banners/gallery-banner.png);
+    background-position: center;
 }
 #contact-banner {
     background-image:url(../img/banners/letter-banner.png);
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1920px) {
     #home-header{
-       background-image:url(../img/banners/flowers-and-kiss-small.png); 
+        background-image:url(../img/banners/home-banner-large.png); 
     }
+}
+
+@media screen and (max-width: 1400px) {
+    #home-header{
+        background-image:url(../img/banners/home-banner-mirror.png); 
+    }
+}
+
+@media screen and (max-width: 768px) {
     #our-story-header{
         background-image:url(../img/banners/books-banner-small.png);
     }
