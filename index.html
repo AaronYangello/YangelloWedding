@@ -207,7 +207,7 @@
 					</div>
 					<div class="desc-groom">
 						<h3>Aaron Yangello</h3>
-						<p>"Our willingness to wait reveals the value we place on what we're waiting for." <br>-Charles Stanley</p>
+						<p>“I love you not only for what you are, but for what I am when I am with you.” <br> – Roy Croft</p>
 						<!-- There are people out there who are waiting to meet you. Waiting to love you. You have to stick around for them. <br> -Benedict Smith -->
 					</div>
 				</div>
@@ -218,7 +218,7 @@
 					</div>
 					<div class="desc-bride">
 						<h3>Kelsea Salvatore</h3>
-						<p>"I am patient with stupidity but not with those who are proud of it." <br> -Edith Sitwell</p>
+						<p>“You don’t marry someone you can live with, you marry the person who you cannot live without.” <br> ― Aleatha Romig</p>
 					</div>
 				</div>
 			</div>
@@ -226,11 +226,11 @@
 	</div>
 
 <!-- Wedding Events-->
-	<div id="event-banner" class="fh5co-event fh5co-bg">
+	<div id="event-banner" class="fh5co-event fh5co-bg" >
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" style="margin-bottom: 3em;">
 					<span>Our Special Events</span>
 					<h2>Wedding Events</h2>
 				</div>
@@ -270,6 +270,18 @@
 									</div>
                                     <p>Eat, drink, and be merry in <a href="http://www.brigalias.com/ballrooms/">Brigalia's Camelot Ballroom</a> as we dance the night away!</p>
                                     <p>What's the song that's guarenteed to get you on the dance floor?</p>
+                                    <div id="fh5co-started" class="fh5co-bg" style="padding: 0 0;">
+                                        <div class="row animate-box">
+                                            <div class="col-md-10 col-md-offset-1">
+                                                <form class="form-inline">
+                                                    <div class="form-group">
+                                                        <input type="name" class="form-control" id="name" placeholder="Song Name">
+                                                    </div>
+                                                    <button type="button" class="btn btn-default btn-block" onclick="addSong()">Let's Dance</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
 								</div>
 							</div>
 						</div>
@@ -279,8 +291,23 @@
 		</div>
 	</div>
 <!-- End Wedding Events-->
+<!-- Footer and contact info -->
+    <footer id="fh5co-footer" style="padding-top: 3em; padding-bottom: 3em;">
+        <div class="container">
+           <div class="fh5co-contact-info">
+                <h3>Contact Information</h3>
+                <hr>
+                <ul>
+                    <li class="address">1203 Hessian Ave. <br> National Park, NJ 08063</li>
+                    <li class="phone"><a href="tel://8564691644">(856) 469 - 1644</a></li>
+                    <li class="email"><a href="mailto:ayangello@gmail.com">ayangello@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+<!-- Footer and contact info -->
 
-<!-- Friend Wishes
+<!-- Friend Wishes --
 	<div id="fh5co-testimonial">
 		<div class="container">
 			<div class="row">
@@ -334,7 +361,7 @@
 			</div>
 		</div>
 	</div>
- End Friend Wishes-->
+ <!-- End Friend Wishes-->
 
 	</div><!--End Page-->
 
@@ -346,6 +373,8 @@
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Submit Song -->
+	<sript src="js/submitSong.js"></sript>
 	<!-- Bootstrap -->
 	<script src="js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
