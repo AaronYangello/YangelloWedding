@@ -1,17 +1,10 @@
 <?php
-    echo "Hello";
-
+ header('Content-Type: application/json');
     //Include database configuration file
     include('../gallery-pages/dbConfig.php');
+    sleep(1);
 
-    echo $_POST["name"];
-
-    echo $_POST["name_entered"];
-
-    $song = $_POST["name"];
-
-    //get images from database
-    $query = $db->query("INSERT INTO `song-requests` (`name`) VALUES ('$song');"); 
-
-    
+    $songName = $_POST['songname'];    
+    $db->query("INSERT INTO `song-requests` (`name`) VALUES ('$songName');"); 
+    echo json_encode("Success");
 ?>

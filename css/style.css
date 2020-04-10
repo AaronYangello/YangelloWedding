@@ -1498,6 +1498,9 @@ form label {
   padding-left: 50px;
   padding-right: 50px;
 }
+#fh5co-started .btn:hover {
+    background: var(--primary-rgb);
+}
 #fh5co-started .form-inline .form-group {
   width: 100% !important;
   margin-bottom: 10px;
