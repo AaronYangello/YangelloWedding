@@ -128,6 +128,35 @@ option{
     display: none;
   }
 }
+
+#covid-content{
+    width:95%;
+    margin: auto;
+}
+#covid-content > .row{
+    margin-top:10px;
+}
+.restriction{
+    border: 2px solid black;
+    border-radius: 15px 50px;
+    margin: 10px;
+}
+.icon > img{
+    width:70%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.text > p{
+    margin-right:20px;
+    margin-top:10%;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .fh5co-nav ul {
   padding: 0;
   margin: 2px 0 0 0;
@@ -904,6 +933,11 @@ form label {
 }
 #contact-banner {
     background-image:url(../img/banners/letter-banner.png);
+}
+
+#covid-banner{
+    background-image:url(../img/banners/CovidBanner.png);
+    background-position: right;
 }
 
 @media screen and (max-width: 1920px) {
