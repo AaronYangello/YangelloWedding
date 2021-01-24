@@ -4,6 +4,17 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150630617-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-150630617-1');
+        </script>
+
+       
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Aaron &amp; Kelsea</title>
@@ -54,7 +65,7 @@
         <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
         <script>
             // Set the date we're counting down to
-            var countDownDate = new Date("April 25, 2020 18:00:00").getTime();
+            var countDownDate = new Date("March 20, 2021 18:00:00").getTime();
 
             // Update the count down every 1 second
             var x = setInterval(function() {
@@ -107,6 +118,18 @@
         <meta name="msapplication-TileImage" content="img/icon/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
 
+        <style>
+            #covid-link{
+                color:white;
+                text-decoration: underline;
+            }
+            #covid-link:hover{
+                color:white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        </style>
+
 	</head>
 	<body>
 		
@@ -115,24 +138,34 @@
 	<div id="page">
 	
 <!-- Navigation -->
-	<nav class="fh5co-nav" role="navigation">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">Wedding<strong>.</strong></a></div>
-				</div>
-				<div class="col-xs-10 text-right menu-1">
-					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="about.html">Our Story</a></li>
-						<li><a href="party.html">The Wedding Party</a></li>
-						<li class="has-dropdown"><a href="gallery.html">Gallery</a></li>
-						<li><a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1562771516832&key=GRP&app=resvlink">Book Your Stay</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</nav>
+    <nav class="fh5co-nav" role="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2">
+                    <div id="fh5co-logo"><a href="index.php">Wedding<strong>.</strong></a></div>
+                </div>
+                <div class="col-xs-10 text-right menu-1">
+                    <ul>
+                        <li class="active"><a href="index.php">Home</a></li>
+                        <li><a href="http://yangelloeverafter.rsvpify.com">RSVP</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="party.html">The Wedding Party</a></li>
+                        <li class="has-dropdown">
+                            <a href="gallery.html">Gallery</a>
+                            <ul class="dropdown">
+                                <li><a href="gallery-pages/through-the-years.php">Through the Years</a></li>
+                                <li><a href="gallery-pages/yangello-ever-after.php">Yangello Ever After</a></li>
+                                <li><a href="gallery-pages/engagement-photos.php">Engagement Photos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://registry.theknot.com/kelsea-salvatore-aaron-yangello-april-2020-nj/28644447">Registry</a></li>
+                        <li><a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1587669451356&key=GRP&app=resvlink">Book Your Stay</a></li>
+                        <li><a href="covid.html">COVID-19 Updates</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
 
 	<header id="home-header" class="fh5co-header fh5co-cover" role="banner" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
@@ -142,7 +175,7 @@
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1>Aaron &amp; Kelsea</h1>
-							<h2>We Are Getting Married <br> <h4><em>...finally...</em></h4></h2>
+							<h2>We Are Getting Married <br> <h4><em>...again...</em></h4></h2>
 							
 							<div class="simply-countdown simply-countdown-one">
 							    <div class="simply-countdown simply-countdown-one">
@@ -176,34 +209,39 @@
 							<!-- Button code -->
                             <div title="Add to Calendar" class="btn btn-default btn-sm addeventatc" data-styling="none" >
                                 Save the Date!
-                                <span class="start">04/25/2019 06:00 PM</span>
-                                <span class="end">04/25/2019 11:30 PM</span>
+                                <span class="start">03/20/2021 04:30 PM</span>
+                                <span class="end">03/20/2021 10:00 PM</span>
                                 <span class="timezone">America/New_York</span>
                                 <span class="title">Aaron and Kelsea's Wedding</span>
                                 <span class="location">Brigalias 396 Williamstown Rd, Sicklerville, NJ 08081</span>
                                 <span class="organizer">Aaron Yangello</span>
                                 <span class="organizer_email">ayangello@gmail.com</span>
                             </div>
+                            <a href="http://yangelloeverafter.rsvpify.com"><div title="RSVP" class="btn btn-default btn-sm" data-styling="none">RSVP</div></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
-
+    <div style="width: 100%; background-color:#C69EFF; text-align: center;">
+        <h3 style="color:white;">We've on for March 20th!</h3>
+        <br>
+        <p style="color:white; margin:-50px">See COVID-19 Updates <a href="covid.html" id="covid-link">here</a>!</p>
+    </div>
 	<div id="fh5co-couple">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<h2>Hello!</h2>
-					<h3>April 25th, 2020 Sicklerville, NJ</h3>
+					<h3>March 20th, 2021 Sicklerville, NJ</h3>
 					<p>Come and celebrate with us!</p>
 				</div>
 			</div>
 			<div class="couple-wrap animate-box">
 				<div class="couple-half">
 					<div class="groom">
-						<img src="img/Aaron.png" alt="Aaron Yangello" class="img-responsive">
+						<img src="img/aaron.png" alt="Aaron Yangello" class="img-responsive">
 					</div>
 					<div class="desc-groom">
 						<h3>Aaron Yangello</h3>
@@ -214,7 +252,7 @@
 				<p class="heart text-center"><i class="icon-heart2"></i></p>
 				<div class="couple-half">
 					<div class="bride">
-						<img src="img/Kelsea.png" alt="Kelsea Salvatore" class="img-responsive">
+						<img src="img/kelsea2.jpg" alt="Kelsea Salvatore" class="img-responsive">
 					</div>
 					<div class="desc-bride">
 						<h3>Kelsea Salvatore</h3>
@@ -244,13 +282,13 @@
 									<h3>Main Ceremony</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
-										<span>6:00 PM</span>
-										<span>6:30 PM</span>
+										<span>4:30 PM</span>
+										<span>5:00 PM</span>
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
-										<span>Saturday 25</span>
-										<span>April, 2020</span>
+										<span>Saturday 20</span>
+										<span>March, 2021</span>
 									</div>
 									<p>Come and celebrate with us at <a href="http://www.brigalias.com/ceremonies/">Brigalia's Chapel</a> in Sicklerville. Book your stay at the <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1562771516832&key=GRP&app=resvlink">Couryard Glassboro Rowan University</a> hotel, and get a 20% discount on the room!</p>
 								</div>
@@ -260,24 +298,24 @@
 									<h3>Wedding Reception</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
-										<span>6:30 PM</span>
-										<span>11:30 AM</span>
+										<span>5:00 PM</span>
+										<span>10:00 AM</span>
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
-										<span>Saturday 16</span>
-										<span>May, 2020</span>
+										<span>Saturday 20</span>
+										<span>March, 2021</span>
 									</div>
                                     <p>Eat, drink, and be merry in <a href="http://www.brigalias.com/ballrooms/">Brigalia's Camelot Ballroom</a> as we dance the night away!</p>
                                     <p>What's the song that's guarenteed to get you on the dance floor?</p>
                                     <div id="fh5co-started" class="fh5co-bg" style="padding: 0 0;">
                                         <div class="row animate-box">
                                             <div class="col-md-10 col-md-offset-1">
-                                                <form class="form-inline" action="./php/addsong.php" method="post">
+                                                <form class="form-inline">
                                                     <div class="form-group">
-                                                        <input name="name" type="name" class="form-control" id="name" placeholder="Song Name">
+                                                        <input type="name" class="form-control" id="name" placeholder="Song Name">
                                                     </div>
-                                                    <button type="submit" class="btn btn-default btn-block">Let's Dance</button>
+                                                    <button id="songbtn" type="button" class="btn btn-default btn-block" onclick="addSong()">Let's Dance</button>
                                                 </form>
                                             </div>
                                         </div>
@@ -373,6 +411,8 @@
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Submit Song -->
+	<script src="js/submitSong.js"></script>
 	<!-- Bootstrap -->
 	<script src="js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
